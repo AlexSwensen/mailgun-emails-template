@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "[mjml]": {
+    // set formatter for mjml
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.mjml": "mjml" // mjml files are opened in mjml editor
+  }
+}
