@@ -1,0 +1,17 @@
+{
+  "name": "mailgun-emails-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && mjml templates/*.mjml -o dist/ && echo \"Build complete\"",
+    "clean": "rm -rf dist/*.html"
+  },
+  "repository": "git@github.com:AlexSwensen/mailgun-emails-template.git",
+  "author": "Alexander Swensen <alex.swensen@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@alexswensen/mailgun-uploader": "^1.0.3",
+    "mjml": "^4.13.0"
+  }
+}

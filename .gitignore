@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Custom mjml changes
+
+## Keep the dist folder, but remove all the compiled files
+dist/*
+!dist/.gitkeep
