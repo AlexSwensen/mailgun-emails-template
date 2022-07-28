@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build_and_upload_staging:
+    name: build_and_upload_staging
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          cache: "yarn"
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Build
+        run: yarn build
+      - name: Upload
+        run: npx mailgun-uploader ./dist
+        env:
+          MAILGUN_API_KEY: ${{secrets.CURRENT_MAILGUN_API_KEY}}
+          MAILGUN_DOMAIN: ${{secrets.STAGING_MAILGUN_DOMAIN}}
