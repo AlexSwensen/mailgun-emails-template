@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@alexswensen/mailgun-uploader@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@alexswensen/mailgun-uploader/-/mailgun-uploader-1.0.3.tgz#b2a19a4da8f47a891222c3dd9ac4e0ead347d242"
-  integrity sha512-VjMl97J91va3JX5KDQUrmCGhYs4ZSZuxNxq0rnXcd25d5OVV2zFGWceJm9CF1qa6g++gzJwhfH9otFp83l/0MQ==
+"@alexswensen/mailgun-uploader@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@alexswensen/mailgun-uploader/-/mailgun-uploader-1.0.6.tgz#3d7c5a8421c8bbfeadac3884cde74b15d0806a3b"
+  integrity sha512-sikEGyscXwZyqCuLbROagUbewtZ9OXVYRrPRL6I3WZ027D19pMYLrnwYV+UQkdL1mIrxzcSOrn5wzvOveKIfow==
   dependencies:
     commander "^9.2.0"
     dotenv "^16.0.1"
